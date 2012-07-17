@@ -1,0 +1,28 @@
+<!doctype html>
+<title>Compare My Code</title>
+<link rel=stylesheet type=text/css href='{{ url_for('static',filename='style.css')}}'>
+<div class=page>
+  <h1>Example #{{num}}</h1>
+
+  <div class=metanav>
+
+{{code}}
+
+<h4>
+
+<form id='answerform' method='post' action='item' >
+   <p>
+   Explain what the code does: <br />
+   <input type='textarea' name='answer' /> <br />
+   </p>
+
+   <p>
+   <input type='submit' value='Next' />
+   </p>
+
+</form>
+
+</h4>
+
+</div>
+</div>
